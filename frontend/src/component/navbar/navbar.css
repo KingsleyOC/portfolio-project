@@ -1,0 +1,37 @@
+.nav_container {
+    background: var(--purple);
+    color: var(--white);
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 1rem 7rem 1rem;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-ul {
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-link {
+    padding: .3rem 1rem;
+}
+
+.active {
+    background-color: white;
+    border-radius: 20px;
+    color: var(--purple)
+}
+
+@media (max-width: 768px){
+    .nav_container{
+        justify-content: center;
+        flex-direction: column;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .logo{font-size: 16px;}
+}

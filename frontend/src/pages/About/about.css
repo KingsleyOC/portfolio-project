@@ -1,0 +1,55 @@
+.about_section {
+    place-items: center;
+}
+
+.about_section_cont {
+    grid-template-columns: 60% 40%;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* spliting the section into two equal parts or 1fr 1fr here 2 means it repeats twice it can be 3 times of one fraction(1fr)*/
+    place-items: center;
+    padding: 1rem 10rem 1rem 7rem;
+    gap: 30px;
+    text-align: justify;
+}
+
+.about_sub_section {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sent {
+    font-size: 18px;
+}
+
+.sent_me {
+    font-size: 16px;
+}
+
+.about_header {
+    font-size: 20px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--purple);
+}
+
+.protractor {
+    align-items: center;
+    gap: 10px;
+}
+
+/*media queries*/
+@media(max-width: 768px) {
+    .about_section_cont {
+        grid-template-columns: 100% 0%;
+        /* padding: 1.5rem; */
+        text-align: center;
+    }
+    .protractor {
+        justify-content: center;
+    }
+    
+}
